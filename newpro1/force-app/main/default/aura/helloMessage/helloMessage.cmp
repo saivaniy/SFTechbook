@@ -1,0 +1,13 @@
+<aura:component>
+    <aura:attribute name="message" type="String"/>
+    <p>Hello! {!'Hello!'+ v.message}</p>
+    
+   <!-- Did you notice what our formal definition of expressions left out? JavaScript function calls. You can’t use JavaScript in expressions in Aura components markup.
+ <p>{!$Label.c.Greeting + v.message}</p>
+<aura:component>
+    <aura:attribute name="customMessage" type="String"/>
+    <p> <c:helloMessage message="{!v.customMessage}"/> </p>
+</aura:component>
+
+-->
+</aura:component>
